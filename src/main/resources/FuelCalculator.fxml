@@ -1,0 +1,29 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.fuelcalculator.FuelCalculatorController">
+    <Label fx:id="titleLabel" text="Hello!" />
+
+    <HBox>
+        <Label fx:id="distanceLabel" text="Distance (km):" />
+        <TextField fx:id="distanceField" />
+    </HBox>
+
+    <HBox>
+        <Label fx:id="fuelLabel" text="Fuel Used (liters):" />
+        <TextField fx:id="fuelField" />
+    </HBox>
+
+    <Button fx:id="calculateButton" text="Calculate" onAction="#handleCalculate" />
+    <Label fx:id="resultLabel" />
+
+    <HBox>
+        <Button text="EN" onAction="#switchToEnglish" />
+        <Button text="FR" onAction="#switchToFrench" />
+        <Button text="JP" onAction="#switchToJapanese" />
+        <Button text="IR" onAction="#switchToPersian" />
+    </HBox>
+</VBox>
